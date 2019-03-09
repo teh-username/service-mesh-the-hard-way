@@ -1,0 +1,41 @@
+static_resources:
+  listeners:
+    - name: "server_listener"
+      address:
+        socket_address:
+          address: 0.0.0.0
+          port_value: 9000
+      filter_chains:
+        - filters:
+            name: "envoy.http_connection_manager"
+            config:
+              stat_prefix: "egress_server"
+              codec_type: "AUTO"
+              route_config:
+                name: "server_http_route"
+                virtual_hosts:
+                  - name: "server_http_route"
+                    domains:
+                      - "*"
+                    routes:
+                      - match:
+                          prefix: "/"
+                        route:
+                          cluster: "server"
+              http_filters:
+                - name: "envoy.router"
+  clusters:
+    - name: server
+      connect_timeout: 0.250s
+      type: strict_dns
+      lb_policy: round_robin
+      hosts:
+        - socket_address:
+            address: "server"
+            port_value: 8080
+admin:
+  access_log_path: "/dev/null"
+  address:
+    socket_address:
+      address: 0.0.0.0
+      port_value: 8001
