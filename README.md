@@ -8,4 +8,5 @@ New to service mesh? Start [here!](https://github.com/teh-username/service-mesh-
 ### TODOs:
 
 * Better documentation
+* Optimize `docker-compose` files to reduce file repetition
 * Add other todo items
