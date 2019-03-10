@@ -4,7 +4,6 @@ services:
     build: ./proxy
     ports:
       - "8001:8001"
-      - "9000:9000"
     volumes:
       - ./proxy/envoy.yaml:/etc/envoy.yaml
   client:
