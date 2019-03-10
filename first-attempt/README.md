@@ -17,4 +17,9 @@ To verify whether the proxy works, simply run `docker-compose up` and exec into 
 
 You can also go to [here](http://localhost:8001/) on your host machine to see the admin page of the proxy.
 
+### Relevant Links
+* [Service Mesh with Envoy 101](https://hackernoon.com/service-mesh-with-envoy-101-e6b2131ee30b)
+* [Getting started with Lyft Envoy for microservices resilience](https://www.datawire.io/envoyproxy/getting-started-lyft-envoy-microservices-resilience/)
+
+
 [Home](https://github.com/teh-username/service-mesh-the-hard-way) [Next](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/second-attempt)

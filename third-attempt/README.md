@@ -62,4 +62,9 @@ You can then check and compare the following stats:
 
 To verify that Envoy is correctly routing the requests to either service, you can try editing the cluster of the `service_b` virtual host to `service_a`. Running `curl -v -H 'Host: service-b' client-proxy:9001` should return a response from `service-a`.
 
+### Relevant Links
+* [Envoy Service to Service Deployment](https://www.envoyproxy.io/docs/envoy/v1.9.0/intro/deployment_types/service_to_service)
+* [Envoy Service to Service Template Example](https://github.com/envoyproxy/envoy/blob/master/configs/envoy_service_to_service_v2.template.yaml)
+* [Envoy as a generic forward proxy](https://github.com/vadimeisenbergibm/envoy-generic-forward-proxy)
+
 [Previous](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/second-attempt)
