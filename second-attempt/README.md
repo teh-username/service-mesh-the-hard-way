@@ -24,3 +24,5 @@ We then verify the flow by way of the following stats:
 
 * `http.egress_http.downstream_rq_2xx` ([client-proxy](http://localhost:8001/stats))
 * `http.ingress_http.downstream_rq_2xx` ([server-proxy](http://localhost:8002/stats))
+
+[Previous](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/first-attempt) [Next](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/third-attempt)

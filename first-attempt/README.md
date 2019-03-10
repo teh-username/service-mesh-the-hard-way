@@ -16,3 +16,5 @@ To verify whether the proxy works, simply run `docker-compose up` and exec into 
 
 
 You can also go to [here](http://localhost:8001/) on your host machine to see the admin page of the proxy.
+
+[Home](https://github.com/teh-username/service-mesh-the-hard-way) [Next](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/second-attempt)

@@ -61,3 +61,5 @@ You can then check and compare the following stats:
 ### Routing
 
 To verify that Envoy is correctly routing the requests to either service, you can try editing the cluster of the `service_b` virtual host to `service_a`. Running `curl -v -H 'Host: service-b' client-proxy:9001` should return a response from `service-a`.
+
+[Previous](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/second-attempt)
