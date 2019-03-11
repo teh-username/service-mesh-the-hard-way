@@ -28,4 +28,4 @@ We then verify the flow by way of the following stats:
 ### Relevant Links
 * [Envoy Jaeger Tracing Example](https://github.com/envoyproxy/envoy/tree/master/examples/jaeger-tracing)
 
-[Previous](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/first-attempt) [Next](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/third-attempt)
+[Previous](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/docker-compose/attempt-1) [Next](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/docker-compose/attempt-3)

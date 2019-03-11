@@ -67,4 +67,4 @@ To verify that Envoy is correctly routing the requests to either service, you ca
 * [Envoy Service to Service Template Example](https://github.com/envoyproxy/envoy/blob/master/configs/envoy_service_to_service_v2.template.yaml)
 * [Envoy as a generic forward proxy](https://github.com/vadimeisenbergibm/envoy-generic-forward-proxy)
 
-[Previous](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/second-attempt)
+[Previous](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/docker-compose/attempt-2) [Next](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/docker-compose/attempt-4)

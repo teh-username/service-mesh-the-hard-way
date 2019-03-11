@@ -22,4 +22,4 @@ You can also go to [here](http://localhost:8001/) on your host machine to see th
 * [Getting started with Lyft Envoy for microservices resilience](https://www.datawire.io/envoyproxy/getting-started-lyft-envoy-microservices-resilience/)
 
 
-[Home](https://github.com/teh-username/service-mesh-the-hard-way) [Next](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/second-attempt)
+[Home](https://github.com/teh-username/service-mesh-the-hard-way) [Next](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/docker-compose/attempt-2)

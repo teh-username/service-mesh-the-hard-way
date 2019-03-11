@@ -29,3 +29,5 @@ Example:
 translated as Service B calling Service A
 
 Verification method (stats etc) is the same as the previous setup
+
+[Previous](https://github.com/teh-username/service-mesh-the-hard-way/tree/master/docker-compose/attempt-3)
