@@ -1,0 +1,26 @@
+version: '3'
+services:
+  service-a:
+    build: ./service-a
+  service-a-proxy:
+    build: ./proxy
+    ports:
+      - '8001:8001'
+    volumes:
+      - ./service-a/envoy.yaml:/etc/envoy.yaml
+  service-b:
+    build: ./service-b
+  service-b-proxy:
+    build: ./proxy
+    ports:
+      - '8002:8001'
+    volumes:
+      - ./service-b/envoy.yaml:/etc/envoy.yaml
+  service-c:
+    build: ./service-c
+  service-c-proxy:
+    build: ./proxy
+    ports:
+      - '8003:8001'
+    volumes:
+      - ./service-c/envoy.yaml:/etc/envoy.yaml
