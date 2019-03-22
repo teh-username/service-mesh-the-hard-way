@@ -1,0 +1,25 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: xds-server
+spec:
+  selector:
+    app: xds-server
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: xds-server
+  labels:
+    app: xds-server
+spec:
+  containers:
+    - name: xds-server
+      image: tehusername/xds-server:0.2.2
+      ports:
+        - containerPort: 8080
+          name: endpoint
