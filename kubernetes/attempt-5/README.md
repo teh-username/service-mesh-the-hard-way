@@ -29,7 +29,7 @@
 
 ## Verification
 
-Run `kubectl port-forward service-a 8080:9211` then `curl http://localhost:8080/service?flow=abcabcbcbca`.
+Run `kubectl port-forward service-a 8080:9211` then `curl 'http://localhost:8080/service?flow=abcabcbcbca'`.
 
 For each service, take a look at the following stats and corresponding service log count:
 * `listener.0.0.0.0_9001.http.egress_http.downstream_rq_2xx:` <-> "Requesting: ..."
