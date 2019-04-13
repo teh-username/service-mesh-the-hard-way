@@ -11,4 +11,5 @@ Starting Points:
 
 * Better documentation
 * Optimize `docker-compose` files to reduce file repetition
+* Use specific envoy versions instead of `latest`
 * Add other todo items
