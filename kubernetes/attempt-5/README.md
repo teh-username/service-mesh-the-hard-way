@@ -38,3 +38,4 @@ For each service, take a look at the following stats and corresponding service l
 ### Relevant Links
 
 * [Understanding How Envoy Sidecar Intercept and Route Traffic in Istio Service Mesh](https://jimmysong.io/posts/understanding-how-envoy-sidecar-intercept-and-route-traffic-in-istio-service-mesh/)
+* [Envoy `route.Route` documentation](https://www.envoyproxy.io/docs/envoy/latest/api-v2/api/v2/route/route.proto#envoy-api-msg-route-route)

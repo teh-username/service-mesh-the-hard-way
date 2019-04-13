@@ -46,26 +46,35 @@ data:
                     virtual_hosts:
                       - name: local_service
                         domains:
-                          - "service-c:8080"
+                          - "service-c*"
                         routes:
                           - match:
                               prefix: "/"
+                              headers:
+                                - name: ':authority'
+                                  suffix_match: ':8080'
                             route:
                               cluster: local_service
                       - name: service_a
                         domains:
-                          - "service-a:8080"
+                          - "service-a*"
                         routes:
                           - match:
                               prefix: "/"
+                              headers:
+                                - name: ':authority'
+                                  suffix_match: ':8080'
                             route:
                               cluster: service_a_8080
                       - name: service_b
                         domains:
-                          - "service-b:8080"
+                          - "service-b*"
                         routes:
                           - match:
                               prefix: "/"
+                              headers:
+                                - name: ':authority'
+                                  suffix_match: ':8080'
                             route:
                               cluster: service_b_8080
                   http_filters:
