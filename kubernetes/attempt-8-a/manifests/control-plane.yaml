@@ -19,7 +19,7 @@ metadata:
 spec:
   containers:
     - name: xds-server
-      image: tehusername/xds-server:0.3.1
+      image: tehusername/xds-server:0.3.2
       env:
         - name: XDS_PORT_NUMBER
           value: "7001"

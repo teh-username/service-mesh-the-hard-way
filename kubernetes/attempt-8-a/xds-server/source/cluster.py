@@ -59,7 +59,7 @@ class ClusterBuilder(object):
 
     def get_versioned_clusters(self):
         return {
-            'version_info': self.version_info,
+            'version_info': str(self.version_info),
             'resources': self._build_clusters()
         }
 

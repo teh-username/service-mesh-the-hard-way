@@ -52,7 +52,7 @@ class RouteBuilder(object):
 
     def get_versioned_routes(self):
         return {
-            'version_info': self.version_info,
+            'version_info': str(self.version_info),
             'resources': [
                 {
                     **RouteBuilder.base_config,
