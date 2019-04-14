@@ -1,0 +1,39 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: control-plane
+spec:
+  selector:
+    app: control-plane
+  ports:
+  - protocol: TCP
+    port: 7001
+    targetPort: 7001
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: control-plane
+  labels:
+    app: control-plane
+spec:
+  containers:
+    - name: xds-server
+      image: tehusername/xds-server:0.3.2
+      env:
+        - name: XDS_PORT_NUMBER
+          value: "7001"
+      ports:
+        - containerPort: 7001
+          name: xds-port-number
+    - name: service-controller
+      image: tehusername/service-controller:0.2.0
+      env:
+        - name: NAMESPACE
+          value: "default"
+        - name: XDS_SERVICE_NAME
+          value: "http://localhost"
+        - name: XDS_PORT_NUMBER
+          value: "7001"
+        - name: XDS_ENDPOINT
+          value: "/v1/service"
