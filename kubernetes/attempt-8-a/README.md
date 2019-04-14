@@ -25,3 +25,12 @@ Pulling of the route and cluster inventories from the xds-server will be tackled
 ## Verification
 
 Run attempt-5 setup for dummy services `kubectl apply -f ../attempt-5/manifests/` then apply manifest for this attempt `kubectl apply -f manifests/`. Port forward to the xds-server `kubectl port-forward control-plane 8080:7001` then visit the included debugging route at `http://localhost:8080/debug`.
+
+## Todos:
+
+* Support modify and delete actions for services
+* Add EDS and watcher for the Endpoint object
+
+### Relevant Links
+
+* (Kubernetes Python Client)[https://github.com/kubernetes-client/python]
