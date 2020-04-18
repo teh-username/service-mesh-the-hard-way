@@ -19,7 +19,7 @@ metadata:
 spec:
   initContainers:
     - name: proxy-init
-      image: tehusername/proxy-init:1.3
+      image: tehusername/proxy-init:1.4
       env:
         - name: SERVICE_PORTS
           value: "8080"
