@@ -13,7 +13,7 @@ iptables -t nat -N PROXY_REDIRECT
 iptables -t nat -A PREROUTING -p tcp -j POD_INBOUND
 
 # Don't route to proxy any traffic not meant for the declared service ports
-iptables -t nat -A POD_INBOUND -p tcp ! -m multiport --dports $SERVICE_PORTS -j RETURN
+iptables -t nat -A POD_INBOUND -p tcp -m tcp -m multiport ! --dports $SERVICE_PORTS -j RETURN
 
 # Redirect all traffic to the declared service ports to the proxy ingress
 iptables -t nat -A POD_INBOUND -p tcp -j REDIRECT --to-ports $PROXY_INGRESS_PORT
